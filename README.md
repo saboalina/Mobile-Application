@@ -14,6 +14,7 @@ On the server-side at least the following details are maintained:
 The application should provide the following features (available without restarting the app):
 
 ● Staff Section (separate activity)
+
   a. Register a new rule. Using POST /rule call by specifying all the rule details. Available online and offline.
   b. View all the rules found in the system, in a list. Using GET /rules call, the staff will retrieve all of them. The list should display at least the id, name, and level. If offline, the app will display an offline message and a way to retry the connection and the call. Once the list is retrieved it should be available offline and online.
   c. By selecting a rule from the list, the staff will be able to view all the rule details. To retrieve the details GET /rule call will be used by specifying the rule id. Available online only.
