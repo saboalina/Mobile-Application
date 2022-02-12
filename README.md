@@ -22,7 +22,9 @@ The application should provide the following features (available without restart
  - View all the rules in a specified time range (from-to). Using the same GET/rules call, the app will retrieve all the rules and will present only the ones included in the specified range.
  - View all the rules at a specified level. Using GET /level , by specifying the desired level, will display all the received rules. The list should be ordered by from, to, and status fields all ascending.
 
- - On the server-side, once a new rule is added to the system, the server will send, using a WebSocket channel, a message to all the connected clients/applications with the new rule object. Each application, that is connected, will display the received rule details, in human form (not JSON text or toString) using an in-app “notification” (like a snack bar or toast or a dialog on the screen), regardless of the opened screen.
- - On all server/DB operations a progress indicator will be displayed.
- - On all server/DB interactions, if an error message is generated, the app should display the error message using a toast or snack bar. On all interactions (server or DB calls), a log message should be recorded.
+On the server-side, once a new rule is added to the system, the server will send, using a WebSocket channel, a message to all the connected clients/applications with the new rule object. Each application, that is connected, will display the received rule details, in human form (not JSON text or toString) using an in-app “notification” (like a snack bar or toast or a dialog on the screen), regardless of the opened screen.
+
+On all server/DB operations a progress indicator will be displayed.
+
+On all server/DB interactions, if an error message is generated, the app should display the error message using a toast or snack bar. On all interactions (server or DB calls), a log message should be recorded.
 
